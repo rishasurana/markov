@@ -6,7 +6,7 @@
     <title>AI Writer</title>
     <h4>Input a text file to write a story of a similar style with AI... </h4><br>
     <input type="file" accept=".txt" id="file" name="file"><br>
-    <button onclick="run(file)">Submit</button> <br>
+    <button id="write" onclick="run(file)">Write</button> <br>
     <br>
 
 
@@ -14,6 +14,9 @@
     <a href="/inputs/harrypotter.txt" download>harrypotter.txt</a><br>
     <a href="/inputs/greatgatsby.txt" download>greatgatsby.txt</a><br>
     <a href="/inputs/warandpeace.txt" download>warandpeace.txt</a><br>
+
+    <br><h6>If file upload does not work in Safari, go to system preferences > Security & Privacy > Full Disk Access.
+    Click the "+" and add /Applications/Safari, enable it, restart safari. VIA: StackOverflow</h6>
 
   </body>
 </html>

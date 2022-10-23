@@ -4,6 +4,7 @@ var ngrams = {}; //A contiguous sequence of n items from a given sample of text 
 var button; //Generate button.
 var txt; //Input file.
 var result; //Output text.
+var write = document.getElementById('write');
 
 
 function markov(){
@@ -24,7 +25,7 @@ function markov(){
 
 }
 
-function run(file){
+write.onclick = function run(file){
    txt = file.data;
 
   //create an array of phrases
