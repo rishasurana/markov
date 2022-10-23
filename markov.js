@@ -1,10 +1,8 @@
-var file; //Given file.
 var order = 10; //Analysis key.
 var ngrams = {}; //A contiguous sequence of n items from a given sample of text or speech.
 var button; //Generate button.
 var txt; //Input file.
 var result; //Output text.
-var write = document.getElementById('write');
 
 
 function markov(){
@@ -19,25 +17,24 @@ function markov(){
        result+=random(possibilities);
      }
      curGram = result.substring(result.length-order,result.length);
-   }
+  }
+  document.write(3+4);
   document.write(result);
-
 
 }
 
-function run(){
-   txt = file.data;
+function run(file){
+  txt = file.data;
 
   //create an array of phrases
-   for (var i = 0; i <=txt.length-order; i++) {
-     var gram = txt.substring(i,i+order);
-     if (!ngrams[gram]) {
-       ngrams[gram] = [];
-     }
-     ngrams[gram].push(txt.charAt(i+order));
-
-   }
+  for (var i = 0; i <=txt.length-order; i++) {
+    var gram = txt.substring(i,i+order);
+    if (!ngrams[gram]) {
+      ngrams[gram] = [];
+    }
+    ngrams[gram].push(txt.charAt(i+order));
+  }
 
   //call markov
-   markov();
+  markov();
 }
