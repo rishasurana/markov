@@ -25,7 +25,7 @@ function markov(){
 
 }
 
-write.onclick = function run(file){
+function run(){
    txt = file.data;
 
   //create an array of phrases
