@@ -1,2 +1,2 @@
 # markov
-AI story writer based on a Markov chain structure.
+Story writer based on a Markov chain structure.
